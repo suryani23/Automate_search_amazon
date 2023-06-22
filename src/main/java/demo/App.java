@@ -9,20 +9,26 @@ public class App {
     public void getGreeting() throws InterruptedException, MalformedURLException {
         //TestCases tests = new TestCases(); // Initialize your test class
         //Automate_search_amazon asa = new Automate_search_amazon();
-        Automate_count_hyperlinks ach = new Automate_count_hyperlinks();
+        //Automate_count_hyperlinks ach = new Automate_count_hyperlinks();
+        //Automate_image_urls aiurl = new Automate_image_urls();
+        Nested_frames_text nft = new Nested_frames_text();
 
         //TODO: call your test case functions one after other here
 
         //tests.testCase01();
         //asa.AmazonSearch();
-        ach.hyperlinksCount();
+        //ach.hyperlinksCount();
+        //aiurl.imageUrls();
+        nft.nestedFrames();
 
         //END Tests
 
 
         //tests.endTest(); // End your test by clearning connections and closing browser
         //asa.endTest();
-        ach.endTest();
+        //ach.endTest();
+        //aiurl.endTest();
+        nft.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
