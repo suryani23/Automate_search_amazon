@@ -51,12 +51,12 @@ public class Automate_image_urls {
             System.out.println("Image URL: " + imageUrl);
         }
         
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        // JavascriptExecutor js = (JavascriptExecutor) driver;
         
-        //This will scroll the page till the element is found
-        WebElement Element = driver.findElement(By.xpath("//h2[text()='Premieres']"));
-        js.executeScript("arguments[0].scrollIntoView();", Element);
-        System.out.println("good job");
+        // //This will scroll the page till the element is found
+        // WebElement Element = driver.findElement(By.xpath("//h2[text()='Premieres']"));
+        // js.executeScript("arguments[0].scrollIntoView();", Element);
+        // System.out.println("good job");
 
     
     }

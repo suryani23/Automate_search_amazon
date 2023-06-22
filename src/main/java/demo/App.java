@@ -3,15 +3,16 @@
  */
 package demo;
 import java.net.MalformedURLException;
-
+import java.io.IOException;
 
 public class App {
-    public void getGreeting() throws InterruptedException, MalformedURLException {
+    public void getGreeting() throws InterruptedException, MalformedURLException, IOException {
         //TestCases tests = new TestCases(); // Initialize your test class
         //Automate_search_amazon asa = new Automate_search_amazon();
         //Automate_count_hyperlinks ach = new Automate_count_hyperlinks();
         //Automate_image_urls aiurl = new Automate_image_urls();
-        Nested_frames_text nft = new Nested_frames_text();
+        //Nested_frames_text nft = new Nested_frames_text();
+        Window_handles wh = new Window_handles();
 
         //TODO: call your test case functions one after other here
 
@@ -19,7 +20,8 @@ public class App {
         //asa.AmazonSearch();
         //ach.hyperlinksCount();
         //aiurl.imageUrls();
-        nft.nestedFrames();
+        //nft.nestedFrames();
+        wh.windowHandles();
 
         //END Tests
 
@@ -28,10 +30,11 @@ public class App {
         //asa.endTest();
         //ach.endTest();
         //aiurl.endTest();
-        nft.endTest();
+        //nft.endTest();
+        wh.endTest();
     }
 
-    public static void main(String[] args) throws InterruptedException, MalformedURLException {
+    public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
         new App().getGreeting();
     }
 }
